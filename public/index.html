@@ -3,11 +3,20 @@
 <head>
   <title>Pay with spaco</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
   <h1>Sparco payment integration</h1>
-  <p>Project init</p>
-</body>
+  <p>add amount to donate</p>
 
+  <form id="paymentForm" method="get" action="/payment/pay">
+    <input type="text" id="amount" name="amount"/>
+
+    <button type="submit">
+      Donate
+    </button>
+  </form>
+  <script defer src="./javascripts/script.js"></script>
+</body>
 </html>
